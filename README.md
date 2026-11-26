@@ -11,4 +11,4 @@ La tienda PHP corre en la raiz web y consulta el catalogo y las existencias de D
 
 ## Procedencia
 
-La tienda proviene de la copia de trabajo local de Station X. Los archivos assets/store.css y assets/store.js coinciden byte a byte con la publicacion consultada el 26 de noviembre de 2026. La pagina de acceso a /htdocs publica la version 22.0.4 en las URL de sus recursos. El submodulo apunta al commit de la etiqueta oficial 22.0.4. La autenticacion al hosting rechazo la credencial disponible y queda pendiente verificar el PHP servido y las posibles personalizaciones o modulos locales de Dolibarr.
+La tienda proviene de la copia de trabajo local de Station X. Los archivos assets/store.css y assets/store.js coinciden byte a byte con la publicacion consultada el 26 de noviembre de 2026. La pagina de acceso a /htdocs publica la version 22.0.4 en las URL de sus recursos. El submodulo apunta al commit de la etiqueta oficial 22.0.4. La configuracion local disponible indica el servidor, el usuario y el puerto FTPS. Para verificar el PHP servido y las posibles personalizaciones o modulos locales de Dolibarr se necesita acceso de lectura al hosting.
