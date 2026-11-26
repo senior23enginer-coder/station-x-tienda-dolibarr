@@ -28,3 +28,18 @@ Ejecuta php -l index.php y node --check assets/store.js para comprobar la sintax
 
 - [Tienda Station X](https://stationxtulua.com/)
 - [Dolibarr en Station X](https://stationxtulua.com/htdocs/)
+
+<!-- station-x-repository-guide:start -->
+
+## Guía de esta copia
+
+### Recorrido de la tienda
+[index.php](./index.php) muestra el catálogo y [producto.php](./producto.php) la ficha del producto. [carrito.php](./carrito.php) y [pedido.php](./pedido.php) cubren la compra. [admin-store.php](./admin-store.php) contiene la administración y [store-lib.php](./store-lib.php) comparte el acceso a datos y la integración.
+### Instalación y datos
+Inicializa [dolibarr](./dolibarr) con `git submodule update --init`. Usa el instalador de Dolibarr para preparar la base de prueba y configura la tienda a partir de [store-private.php.example](./store-private.php.example). Revisa la configuración de documentos del ERP y permisos del ambiente local antes de probar cargas.
+### Pruebas de integración
+Verifica catálogo, stock, carrito y pedidos con un conjunto de prueba. Prueba [payment-webhook.php](./payment-webhook.php) únicamente con credenciales y transacciones de un entorno de pruebas. Usa `php -l` y `node --check assets/store.js` para comprobar sintaxis.
+### Producción
+La tienda pública y el acceso ERP están enlazados arriba. Consulta el apartado de procedencia para distinguir los archivos verificados por HTTP del código tomado de la copia local.
+
+<!-- station-x-repository-guide:end -->
