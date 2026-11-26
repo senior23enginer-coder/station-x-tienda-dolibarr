@@ -1,0 +1,10 @@
+/store-private.php
+/htdocs/
+/assets/uploads/
+/documents/
+/outputs/
+.env
+.env.*
+!*.example
+*.log
+*.bak

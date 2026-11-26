@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tienda">
+  <rect width="64" height="64" rx="12" fill="#f5f8ff"/>
+  <path d="M14 26h36v27H14z" fill="#fff" stroke="#3483fa" stroke-width="3"/>
+  <path d="M11 15h42l-4 12H15z" fill="#ffe600" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M24 53V38h16v15" fill="#e7f0ff" stroke="#3483fa" stroke-width="3"/>
+  <path d="M18 32h10M36 32h10" stroke="#00a650" stroke-width="4" stroke-linecap="round"/>
+</svg>

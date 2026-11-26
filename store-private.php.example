@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') === __FILE__) {
+    http_response_code(404);
+    exit;
+}
+
+foreach (['SX_ADMIN_SETUP_CODE', 'SX_PAYMENT_WEBHOOK_SECRET', 'SX_STORE_EMAIL'] as $name) {
+    $value = getenv($name);
+    if ($value === false || $value === '') {
+        throw new RuntimeException('Falta la variable de entorno ' . $name);
+    }
+    define($name, $value);
+}
+
+foreach ([
+    'SX_SMTP_HOST', 'SX_SMTP_USER', 'SX_SMTP_PASS', 'SX_SMTP_SECURE',
+    'SX_EXTERNAL_PAYMENT_URL', 'SX_GA4_ID', 'SX_META_PIXEL_ID',
+] as $name) {
+    $value = getenv($name);
+    define($name, $value === false ? '' : $value);
+}
+define('SX_SMTP_PORT', (int) (getenv('SX_SMTP_PORT') ?: '587'));

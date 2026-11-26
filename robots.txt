@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /htdocs/
+Disallow: /admin-store.php
+Disallow: /payment-webhook.php
+Sitemap: https://stationxtulua.com/sitemap.php

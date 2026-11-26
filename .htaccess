@@ -1,0 +1,3 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^producto/([0-9]+)-?[A-Za-z0-9-]*/?$ producto.php?id=$1 [L,QSA]
